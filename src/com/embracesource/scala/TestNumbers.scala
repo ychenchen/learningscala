@@ -1,10 +1,10 @@
 package com.embracesource.scala
 
-import com.sun.xml.internal.ws.wsdl.writer.document.Import
+//import com.sun.xml.internal.ws.wsdl.writer.document.Import
 
 import java.lang.Byte
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF
+//import com.sun.org.apache.bcel.internal.generic.INSTANCEOF
 
 //2.1Parsing a Number from String
 object ParsingANumberFromString{
@@ -33,17 +33,17 @@ object ComparingFloatingPointNumbers {
 
 object TestNumbers extends App {
   //2.1Parsing a Number from String
-  import com.embracesource.scala.ComparingFloatingPointNumbers;
-  import com.embracesource.scala.ParsingANumberFromString._
+//  import com.embracesource.scala.ComparingFloatingPointNumbers;
+//  import com.embracesource.scala.ParsingANumberFromString._
   //call the toInt method with getOrElse
-  println(toInt("1").getOrElse("0"))
-  println(toInt("a").getOrElse("0"))
+//  println(toInt("1").getOrElse("0"))
+//  println(toInt("a").getOrElse("0"))
   
   //call the toInt method with a match expression
-  toInt("a") match {
-    case Some(n) => println(n)
-    case None => println("Boom, that isn't a number")
-  }
+//  toInt("a") match {
+//    case Some(n) => println(n)
+//    case None => println("Boom, that isn't a number")
+//  }
   println("*****************")
   
   //2.2Converting between numeric types(casting)
@@ -92,10 +92,10 @@ object TestNumbers extends App {
   val f = 0.3
   val g = 0.1 + 0.2
   
-  import com.embracesource.scala.ComparingFloatingPointNumbers._
-  println(~=(a, b, 0.0001))
-  println(~=(a, b, 0.00000000000000001))  //I'm wondering why the result of this is still true?
-  println("*****************")
+//  import com.embracesource.scala.ComparingFloatingPointNumbers._
+//  println(~=(a, b, 0.0001))
+//  println(~=(a, b, 0.00000000000000001))  //I'm wondering why the result of this is still true?
+//  println("*****************")
   
   //2.6Handling very large numbers
   var h = BigInt(1234567890)

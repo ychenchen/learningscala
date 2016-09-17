@@ -1,6 +1,6 @@
 package com.embracesource.scala
 
-import org.omg.CORBA.Object
+//import org.omg.CORBA.Object
 
 object TestControlStructure extends App {
   //3.1Looping with for and foreach
@@ -327,14 +327,14 @@ object TestControlStructure extends App {
   }
   
   //3.18Create your own control structures
-  import com.embracesource.scala.Whilst._
+//  import com.embracesource.scala.Whilst._
   var y = 0
-  whilst(y < 5) {
-    println(y)
-    y += 1
-  }
+//  whilst(y < 5) {
+//    println(y)
+//    y += 1
+//  }
   
-  doubleif(2>1)(3>1)(println("ControlStructureFinished"))
+//  doubleif(2>1)(3>1)(println("ControlStructureFinished"))
 }
 
 //3.18Create your own control structures
